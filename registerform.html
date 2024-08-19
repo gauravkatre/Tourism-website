@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vidarbha Tourism Registration Form</title>
+	<style>
+		form {
+			margin: 50px auto;
+			width: 50%;
+			padding: 20px;
+			background-color: #f2f2f2;
+			border-radius: 10px;
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+		input[type="text"], input[type="email"], select {
+			width: 100%;
+			padding: 8px;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 10px;
+			box-shadow: 1px 1px 2px 1px #ccc;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h2>Vidarbha Tourism Registration Form</h2>
+		<label for="fullname">Full Name:</label>
+		<input type="text" id="fullname" name="fullname" value="">
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" value="">
+
+		<label for="phone">Phone:</label>
+		<input type="text" id="phone" name="phone" value="">
+
+		<label for="place">Place:</label>
+		<select id="place" name="place" value="">
+			<option value="">--Select--</option>
+			<option value="tadoba">Tadoba National Park</option>
+			<option value="pench">Pench National Park</option>
+			<option value="Chikhaldara">Chikhaldara</option>
+			<option value="nagpur">Nagpur</option>
+			
+		</select>
+
+
+		<label for="city">City:</label>
+		<input type="text" id="city" name="city" value="">
+
+		<label for="state">State:</label>
+		<select id="state" name="state" value="">
+			<option value="">--Select--</option>
+			<option value="Maharashtra">Maharashtra</option>
+			<option value="Madhya Pradesh">Madhya Pradesh</option>
+			<option value="Chhattisgarh">Chhattisgarh</option>
+			<option value="Gujarat">Gujarat</option>
+			<option value="Andhra Pradesh">Andhra Pradesh</option>
+			<option value="Telangana">Telangana</option>
+		</select>
+
+		<label for="travel-date">Travel Date:</label>
+		<input type="date" id="travel-date" name="travel-date" value="">
+
+		<label for="no-of-travelers">Number of Travelers:</label>
+		<input type="number" id="no-of-travelers" name="no-of-travelers" value="">
+
+		<label for="message">Message:</label>
+		<textarea id="message" name="message"></textarea>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
